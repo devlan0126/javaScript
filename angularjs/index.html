@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+    <div style="text-align:center;">
+    <label>主页面</label>
+    <p>min: <input ng-model="number.min"/></p>
+    <p>max: <input ng-model="number.max"/></p>
+    <p> str:<input ng-model="str" /> </p>
+    </div>
+    <div style="border:1px solid red;height:auto;">
+    <!-- angular自定义指令 的使用，使用 “-” 来代替驼峰命名法 -->
+    <!-- <param-number min="min" max="max"></param-number> -->
+    <div class="param-number" param = "number" str = "{{str}}" fuc ="str" ></div>
+    <div></div>
+    </div>
+</body>
+<script src="node_modules/angular/angular.min.js"></script>
+<script>
+    
+</script>
+<script src="number.js"></script>
+
+</html>
